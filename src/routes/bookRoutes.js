@@ -36,7 +36,7 @@ router.post("/", protectRoute, async (req, res)=>{
 router.get("/", protectRoute, async (req, res)=>{
     try {
         
-        page = req.query.page|| 1;
+        page = req.query.page || 1;
         const limit = req.query.limit || 5;
         const skip =(page-1)*limit;
 
