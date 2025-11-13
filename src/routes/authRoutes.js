@@ -1,6 +1,7 @@
 import express from 'express'
 import User from '../models/User.js';
 import jwt from 'jsonwebtoken'
+import "dotenv/config"
 const router = express.Router();
 
 const generateToken = (userId)=>{
